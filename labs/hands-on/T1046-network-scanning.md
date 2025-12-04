@@ -34,4 +34,19 @@ These entries match aggressive Nmap scanning behavior (TCP SYN probes).
 ## Commands Used
 nmap -A 192.168.56.101
 
+---
+
+### Screenshots / files
+- `screenshots/kali-nmap.png` — Nmap output from Kali.  
+- `screenshots/sysmon-eventid3.png` — Sysmon Event ID 3 showing connection attempts.  
+- `screenshots/firewall-nmap-snippet.png` — filtered firewall log snip (DROP entries).
+
+----
+
+## Detection Ideas
+- Alert on bursts of TCP SYNs to multiple destination ports from a single internal source.  
+- Create SIEM rule: > X unique destination ports hit by same source within Y seconds (e.g., >20 ports in 10s).  
+- Monitor Sysmon Event ID 3 for many distinct DestinationPort values from one SourceIp in a short time window.  
+- Create firewall rule alerts for repeated DROP events to well-known service ports (135, 139, 445).
+- Suricata/IDS: enable Nmap scan signatures for additional context.
 
