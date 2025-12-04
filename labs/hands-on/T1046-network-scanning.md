@@ -19,6 +19,20 @@ Target: **192.168.56.101** (Windows)
 
 ---
 
+## Firewall Log Evidence Did
+The Windows Firewall logs confirm that Nmap probed several common Windows service ports.  
+Multiple **DROP** events were recorded for the following ports:
+
+- **Port 139** — SMB NetBIOS Session Service  
+- **Port 445** — SMB over TCP  
+- **Port 135** — RPC Endpoint Mapper  
+
+These entries match aggressive Nmap scanning behavior (TCP SYN probes).
+
+-----
+
 ## Commands Used
 ```bash
 nmap -A 192.168.56.101
+
+
