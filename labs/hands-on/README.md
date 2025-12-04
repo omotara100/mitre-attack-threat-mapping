@@ -16,7 +16,7 @@ These labs demonstrate how attackers behave, how systems generate telemetry, and
 
 | Technique | Name | Status | Evidence |
 |----------|------|--------|----------|
-|<a href="https://github.com/omotara100/mitre-attack-threat-mapping">**T1046**</a>  **T1046** | Network Service Discovery | ✅ Completed | Sysmon, Firewall, Nmap |
+|<a href="https://github.com/omotara100/mitre-attack-threat-mapping/blob/main/labs/hands-on/T1046-network-scanning.md">**T1046**</a> | Network Service Discovery | ✅ Completed | Sysmon, Firewall, Nmap |
 | **T1018** | Remote System Discovery | ✅ Completed | ICMP logs, Firewall |
 | **T1049** | System Network Connections | ✅ Completed | Netcat logs, Sysmon |
 
