@@ -32,7 +32,6 @@ These entries match aggressive Nmap scanning behavior (TCP SYN probes).
 -----
 
 ## Commands Used
-```bash
 nmap -A 192.168.56.101
 
 
