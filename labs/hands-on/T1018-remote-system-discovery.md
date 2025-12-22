@@ -10,8 +10,11 @@ I used Kali Linux to perform a host discovery (ping sweep–style) scan against 
 From the Kali VM, I executed an Nmap host discovery scan to determine whether the target system was reachable:
 
 - ICMP Echo Requests (ping)
+- ICMP Echo Replies  
 - Host availability checks only (no port scanning)
-- Verification that the target system was online
+- Verification that the target system was online 
+- Host latency measurement  
+- Basic device availability checking  
 
 Target: **192.168.56.101** (Windows)
 
@@ -20,6 +23,11 @@ Target: **192.168.56.101** (Windows)
 ## Firewall Log Evidence
 Windows Firewall logging captured ICMP-related network activity associated with host discovery behavior.  
 While direct IPv4 ICMP Echo logs from Kali were limited (due to Windows Firewall defaults and VirtualBox networking behavior), the following indicators were observed:
+
+Multiple **ALLOW** or **DROP** entries were recorded for:
+
+- **ICMP Echo Request**  
+- **ICMP Echo Reply**
 
 - ICMP traffic associated with system discovery
 - Network-layer activity consistent with host probing
