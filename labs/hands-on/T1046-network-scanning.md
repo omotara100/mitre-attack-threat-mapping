@@ -37,7 +37,7 @@ nmap -A 192.168.56.101
 ---
 
 ### Screenshots / files
-- `screenshots/kali-nmap.png` — Nmap output from Kali.  
+- <a href="https://github.com/omotara100/mitre-attack-threat-mapping/blob/main/labs/hands-on/T1046-network-scanning.md">**T1046**   </a>  `screenshots/kali-nmap.png` — Nmap output from Kali.  
 - `screenshots/sysmon-eventid3.png` — Sysmon Event ID 3 showing connection attempts.  
 - `screenshots/firewall-nmap-snippet.png` — filtered firewall log snip (DROP entries).
 
