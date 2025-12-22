@@ -38,7 +38,7 @@ nmap -A 192.168.56.101
 
 ### Screenshots / files
 - <a href="https://github.com/omotara100/mitre-attack-threat-mapping/blob/main/screenshots/Kali-nmap.png">  `screenshots/kali-nmap.png`</a>  — Nmap output from Kali.  
-- <a href="https://github.com/omotara100/mitre-attack-threat-mapping/blob/main/screenshots/firewall-log.png">  `screenshots/kali-nmap.png`  </a> `screenshots/sysmon-eventid3.png` — Sysmon Event ID 3 showing connection attempts.  
+- <a href="https://github.com/omotara100/mitre-attack-threat-mapping/blob/main/screenshots/sysmon-eventid3.png">  `screenshots/sysmon-eventid3.png`</a>  — Sysmon Event ID 3 showing connection attempts.  
 - <a href="https://github.com/omotara100/mitre-attack-threat-mapping/blob/main/screenshots/firewall-log.png">  `screenshots/firewall-nmap-snippet.png`</a>  — filtered firewall log snip (DROP entries).
 
 ----
