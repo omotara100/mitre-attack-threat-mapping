@@ -51,14 +51,6 @@ These exercises simulate **early-stage attacker reconnaissance and discovery**, 
 
 ---
 
-| Technique | Name | Status | Evidence |
-|----------|------|--------|----------|
-|<a href="https://github.com/omotara100/mitre-attack-threat-mapping/blob/main/labs/hands-on/T1046-network-scanning.md">**T1046**</a> | Network Service Discovery | ✅ Completed | Sysmon, Firewall, Nmap |
-|<a href="https://github.com/omotara100/mitre-attack-threat-mapping/blob/main/labs/hands-on/T1018-remote-system-discovery.md">**T1018**</a>| Remote System Discovery | ✅ Completed | ICMP logs, Firewall |
-| **T1049** | System Network Connections | ✅ Completed | Netcat logs, Sysmon |
-
----
-
 ### ✅ T1049 — System Network Connections
 **Technique:** Observing how systems respond to connection attempts.
 
@@ -71,6 +63,14 @@ These exercises simulate **early-stage attacker reconnaissance and discovery**, 
   - Attackers test connectivity before exploitation or lateral movement
 
 📄 File: `T1049-network-connections.md`
+
+---
+
+| Technique | Name | Status | Evidence |
+|----------|------|--------|----------|
+|<a href="https://github.com/omotara100/mitre-attack-threat-mapping/blob/main/labs/hands-on/T1046-network-scanning.md">**T1046**</a> | Network Service Discovery | ✅ Completed | Sysmon, Firewall, Nmap |
+|<a href="https://github.com/omotara100/mitre-attack-threat-mapping/blob/main/labs/hands-on/T1018-remote-system-discovery.md">**T1018**</a>| Remote System Discovery | ✅ Completed | ICMP logs, Firewall |
+|<a href="https://github.com/omotara100/mitre-attack-threat-mapping/blob/main/labs/hands-on/T1049-network-connections.md"> **T1049**</a> | System Network Connections | ✅ Completed | Netcat logs, Sysmon |
 
 ---
 
@@ -102,17 +102,6 @@ Detecting these steps early can prevent:
   - Firewall logs
   - Sysmon Event ID 3
   - IDS/IPS signatures (e.g., Nmap detection)
-
----
-
-## Next Steps
-
-Planned continuation of this project includes:
-
-- Writing **Sigma detection rules**
-- Creating **SIEM detection queries**
-- Building **threat hunting playbooks**
-- Mapping logs to **MITRE ATT&CK heatmaps**
 
 ---
 
