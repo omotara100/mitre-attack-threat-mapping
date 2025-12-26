@@ -54,7 +54,7 @@ These exercises simulate **early-stage attacker reconnaissance and discovery**, 
 | Technique | Name | Status | Evidence |
 |----------|------|--------|----------|
 |<a href="https://github.com/omotara100/mitre-attack-threat-mapping/blob/main/labs/hands-on/T1046-network-scanning.md">**T1046**</a> | Network Service Discovery | ✅ Completed | Sysmon, Firewall, Nmap |
-| **T1018** | Remote System Discovery | ✅ Completed | ICMP logs, Firewall |
+|<a href="https://github.com/omotara100/mitre-attack-threat-mapping/blob/main/labs/hands-on/T1018-remote-system-discovery.md">**T1018**</a>| Remote System Discovery | ✅ Completed | ICMP logs, Firewall |
 | **T1049** | System Network Connections | ✅ Completed | Netcat logs, Sysmon |
 
 ---
