@@ -1,1 +1,32 @@
+title: Remote System Discovery via ICMP
+id: e5f6g7h8-t1018
+status: experimental
+description: |
+  Detects potential remote system discovery activity using ICMP echo requests
+  to identify live hosts on the network.
+author: YourName
+date: 2025-01-01
+tags:
+  - attack.discovery
+  - attack.t1018
+
+logsource:
+  product: windows
+  category: firewall
+
+detection:
+  selection:
+    Protocol: ICMP
+  condition: selection
+
+fields:
+  - SourceIp
+  - DestinationIp
+  - Action
+
+falsepositives:
+  - Network troubleshooting
+  - Monitoring systems
+
+level: low
 
