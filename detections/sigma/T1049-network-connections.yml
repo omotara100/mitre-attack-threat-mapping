@@ -1,1 +1,33 @@
+title: Suspicious Network Connection Attempt
+id: z9y8x7w6-t1049
+status: experimental
+description: |
+  Detects suspicious outbound or inbound network connection attempts
+  that may indicate system network connection discovery.
+author: YourName
+date: 2025-01-01
+tags:
+  - attack.discovery
+  - attack.t1049
+
+logsource:
+  product: windows
+  category: network_connection
+
+detection:
+  selection:
+    EventID: 3
+  condition: selection
+
+fields:
+  - SourceIp
+  - DestinationIp
+  - DestinationPort
+  - Image
+
+falsepositives:
+  - Legitimate admin activity
+  - Web services
+
+level: medium
 
