@@ -10,22 +10,37 @@ An attacker or compromised internal host may scan multiple ports on another inte
 
 ---
 
+## ATT&CK Technique
+- T1046 – Network Service Discovery
+
+---
+
 ## Data Sources
-- Sysmon Event ID 3 (Network Connection)
-- Windows Firewall logs (pfirewall.log)
-- IDS / Suricata alerts (if available)
+- Sysmon Event ID 3 (Network Connections)
+- Windows Firewall Logs (pfirewall.log)
+- IDS/IPS (Suricata, Zeek)
+- SIEM (Splunk, Sentinel)
 
 ---
 
 ## Hunting Queries / Logic
 - Look for a single Source IP connecting to many destination ports on the same host within a short time window.
 - Identify repeated TCP SYN packets with no successful session establishment.
+- Correlate firewall DROP events with Sysmon network connection logs.
+
 
 Example logic:
 - SourceIp = X
 - DestinationIp = Y
 - DestinationPort count > 20
 - Time window < 60 seconds
+
+---
+
+## Example Indicators
+- Multiple connections to ports 135, 139, 445
+- Rapid port enumeration
+- Repeated firewall DROP actions
 
 ---
 
@@ -47,6 +62,13 @@ Example logic:
 - Identify scanning host owner
 - Isolate host if unauthorized
 - Review subsequent activity (lateral movement, exploitation)
+
+---
+
+## Outcome
+- ☐ True Positive
+- ☐ False Positive
+- ☐ Needs More Data
 
 ---
 
