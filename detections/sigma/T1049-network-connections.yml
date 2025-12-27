@@ -4,7 +4,7 @@ status: experimental
 description: |
   Detects suspicious outbound or inbound network connection attempts
   that may indicate system network connection discovery.
-author: YourName
+author: Omotara
 date: 2025-01-01
 tags:
   - attack.discovery
