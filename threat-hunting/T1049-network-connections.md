@@ -10,10 +10,12 @@ An attacker may test connectivity to services to understand reachable systems an
 
 ---
 
+
 ## Data Sources
-- Windows Firewall logs
 - Sysmon Event ID 3
-- NetFlow / Zeek (if available)
+- Firewall logs
+- NetFlow
+- SIEM
 
 ---
 
@@ -22,6 +24,20 @@ An attacker may test connectivity to services to understand reachable systems an
 - Connection attempts resulting in RESET or DROP
 - Use of uncommon tools (netcat)
 
+---
+
+## Hunt Steps
+1. Identify unusual outbound connection attempts.
+2. Look for failed connection attempts (connection refused).
+3. Correlate with earlier discovery activity.
+
+---
+
+## Example Indicators
+- Netcat-style connection attempts
+- Connection attempts to unexpected ports
+- Repeated failures to same destination
+  
 ---
 
 ## Expected Findings
@@ -37,10 +53,16 @@ An attacker may test connectivity to services to understand reachable systems an
 
 ---
 
-## Response Actions
-- Validate source host activity
-- Review command-line usage
-- Correlate with discovery activity
+## Expected Findings
+- Benign: troubleshooting, service checks
+- Malicious: probing, C2 preparation
+
+---
+
+## Outcome
+- ☐ True Positive
+- ☐ False Positive
+- ☐ Needs More Data
 
 ---
 
