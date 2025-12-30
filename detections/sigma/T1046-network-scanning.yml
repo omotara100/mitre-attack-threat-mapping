@@ -4,7 +4,7 @@ status: experimental
 description: |
   Detects potential network service discovery activity where a single source
   scans multiple destination ports in a short time window.
-author: YourName
+author: Omotara100
 date: 2025-01-01
 tags:
   - attack.discovery
