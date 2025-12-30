@@ -1,1 +1,35 @@
+title: Suspicious Phishing Email - Password Reset Lure
+id: 8f3c2a42-9c2d-4b11-a0d2-1f9c92e9c111
+status: experimental
+description: >
+  Detects phishing emails attempting to impersonate IT support
+  by using password reset lures and suspicious sender domains.
+author: Omotara100
+date: 2025-04-01
+
+logsource:
+  category: email
+  product: generic
+
+detection:
+  selection_subject:
+    Subject|contains:
+      - "Password Reset"
+      - "Account Suspended"
+      - "Urgent Action Required"
+
+  selection_sender_domain:
+    SenderDomain|endswith:
+      - "secure-reset.co"
+
+  condition: selection_subject or selection_sender_domain
+
+falsepositives:
+  - Legitimate IT notifications using similar language
+
+level: medium
+
+tags:
+  - attack.initial_access
+  - attack.t1566.002
 
