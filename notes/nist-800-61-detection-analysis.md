@@ -27,7 +27,7 @@ The guide organizes incident handling into four main stages:
 
 ---
 
-### 2. Detection & Analysis (Focus for Week 2)
+### 2. Detection & Analysis
 - Differentiate **alerts vs confirmed incidents**
 - Categorize incident types (e.g., phishing, malware, credential compromise)
 - Evaluate severity: Low / Medium / High
@@ -59,7 +59,7 @@ The guide organizes incident handling into four main stages:
 
 ---
 
-## 🎯 Practical Takeaways for Week 2
+## 🎯 Practical Takeaways
 - Focus on **phishing incident detection and analysis**
 - Collect evidence and document IOCs systematically
 - Maintain clear incident documentation
