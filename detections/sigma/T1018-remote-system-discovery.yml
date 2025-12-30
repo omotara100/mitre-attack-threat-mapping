@@ -4,7 +4,7 @@ status: experimental
 description: |
   Detects potential remote system discovery activity using ICMP echo requests
   to identify live hosts on the network.
-author: YourName
+author: Omotara100
 date: 2025-01-01
 tags:
   - attack.discovery
