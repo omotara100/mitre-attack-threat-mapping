@@ -1,0 +1,3 @@
+- **NIST SP 800-61 Rev. 3** – Computer Security Incident Handling Guide  
+- **MITRE ATT&CK (Enterprise)**  
+- SOC incident response best practices
